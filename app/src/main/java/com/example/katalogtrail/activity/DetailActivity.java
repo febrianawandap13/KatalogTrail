@@ -1,4 +1,5 @@
 package com.example.katalogtrail.activity;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -6,9 +7,6 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.katalogtrail.R;
-import com.example.katalogtrail.fragments.DetailFragment;
-import com.example.katalogtrail.fragments.ReviewFragment;
 import com.example.katalogtrail.R;
 import com.example.katalogtrail.fragments.DetailFragment;
 import com.example.katalogtrail.fragments.ReviewFragment;

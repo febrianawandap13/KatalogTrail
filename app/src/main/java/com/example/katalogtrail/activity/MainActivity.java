@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ScrollView;
 
 import com.example.katalogtrail.R;
-import com.example.katalogtrail.activity.DetailActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,16 +21,16 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("Judul", "HONDA CRF 250CC");
         intent.putExtra("Code", "0");
-        intent.putExtra("harga","Rp.80.000.000");
+        intent.putExtra("harga", "Rp.80.000.000");
         intent.putExtra("Ket", "Harga motor trail CRF pada model ini memang dibanderol dengan harga yang cukup mahal");
-        intent.putExtra("Review", "HONDA CRF 250CC\n"+
+        intent.putExtra("Review", "HONDA CRF 250CC\n" +
                 "Dilengkapi Panel Indikator Digital yang Tampak Begitu Modern\n" +
                 "\n" +
                 "Selain desain fisik terluarnya, spesifikasi Honda CRF250R ini pun " +
                 "juga akan dilengkapi dengan panel instrumen indikator yang cukup menarik. Pasalnya," +
                 " Honda akan mengandalkan panel digital yang didesain dengan bentuk yang lebih modern dan " +
-                "futuristik sehingga tak ketinggalan jaman.\n"+ "\n" +
-                " Dimensi Gagah dengan Rangka Twin-Spar Aluminum Chasis yang Kokoh\n " + "\n"+
+                "futuristik sehingga tak ketinggalan jaman.\n" + "\n" +
+                " Dimensi Gagah dengan Rangka Twin-Spar Aluminum Chasis yang Kokoh\n " + "\n" +
                 "Menginjak pada sektor berikutnya, kita akan membahas tentang spesifikasi Honda CRF250R terkait dimensinya. Memang, " +
                 "sampai saat ini pun cukup disayangkan mengingat ukuran dimensi panjang, lebar, dan tingginya masih belum diketahui. Namun," +
                 " yang jelas bahwa menurut ifo yang Mas Sena dapatkan, motor ini akan mengusung rangka Twin-Spar Aluminium Chasis yang dikenal " +
@@ -43,13 +43,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("Judul", "KTM EXc-F 250CC");
         intent.putExtra("Code", "1");
-        intent.putExtra("harga","Rp.110.000.000");
+        intent.putExtra("harga", "Rp.110.000.000");
         intent.putExtra("Ket", "Harga motor trail KTM pada model ini memang dibanderol dengan harga yang cukup mahal");
-        intent.putExtra("Review", "KTM EXc-F 250CC\n"+
+        intent.putExtra("Review", "KTM EXc-F 250CC\n" +
                 "KTM 250 EXC-F Six Days terbaru ini diklaim memiliki bobot yang lebih ringan dibanding sebelumnya." +
                 " Salah satu penyebabnya adalah penggantian fork USD dengan produk dari WP XPlor berdiameter 48mm - part ini lebih ringan sekitar " +
-                "200 gram dari sebelumnya.\n"+ "\n" + "Untuk urusan mesin - 250 EXC-F Six Days terbaru ini masih mengusung mesin 249,9cc satu silinder," +
-                " 4-stroke yang dicangkokkan dengan transmisi 6-speed, sistem kopling basah DDS berteknologi hidrolik dari Brembo.\n"+ "\n" +"Brand Brembo lainnya " +
+                "200 gram dari sebelumnya.\n" + "\n" + "Untuk urusan mesin - 250 EXC-F Six Days terbaru ini masih mengusung mesin 249,9cc satu silinder," +
+                " 4-stroke yang dicangkokkan dengan transmisi 6-speed, sistem kopling basah DDS berteknologi hidrolik dari Brembo.\n" + "\n" + "Brand Brembo lainnya " +
                 "juga mengisi di bagian perangkat rem dengan disc brake berdiameter 260mm (depan) dan 220mm (belakang)"
         );
         startActivity(intent);
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("Judul", "YAMAHA YZ 250CC");
         intent.putExtra("Code", "2");
-        intent.putExtra("harga","Rp.90.000.000");
+        intent.putExtra("harga", "Rp.90.000.000");
         intent.putExtra("Ket", "Harga motor trail YZ pada model ini memang dibanderol dengan harga yang cukup mahal");
         intent.putExtra("Review", "YAMAHA YZ 250CC\n+" +
                 "Yamaha mengklaim rpm-nya mampu tembus 10.000 rpm dengan mudah.Blok silindernya menggunakan tipe ceramic-plated cylinder" +
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("Judul", "KAWASAKI KX 250CC");
         intent.putExtra("Code", "3");
-        intent.putExtra("harga","Rp.100.000.000");
+        intent.putExtra("harga", "Rp.100.000.000");
         intent.putExtra("Ket", "Harga motor trail KX pada model ini memang dibanderol dengan harga yang cukup mahal");
         intent.putExtra("Review", "KX 250 F\n + " +
                 "KX juga tidak dijual bebas di semua diler Kawasaki, melainkan hanya di diler-diler PT Greentech Cakrawala Motorindo yang merupakan rekanan" +
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("Judul", "SUZUKI RMZ 250CC");
         intent.putExtra("Code", "4");
-        intent.putExtra("harga","Rp.70.000.000");
+        intent.putExtra("harga", "Rp.70.000.000");
         intent.putExtra("Ket", "Harga motor trail RMZ pada model ini memang dibanderol dengan harga yang cukup mahal");
         intent.putExtra("Review", "SUZUKI RMZ 250\n" +
                 "Mesin\n" +
@@ -108,9 +108,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("Judul", "HUSQVARNA 250CC");
         intent.putExtra("Code", "5");
-        intent.putExtra("harga","Rp.120.000.000");
+        intent.putExtra("harga", "Rp.120.000.000");
         intent.putExtra("Ket", "Harga motor trail HUSQVARNA pada model ini memang dibanderol dengan harga yang cukup mahal");
-        intent.putExtra("Review", "HUSQVARNA 250CC\n"+
+        intent.putExtra("Review", "HUSQVARNA 250CC\n" +
                 "Di website resmi Husqvarna Motorcycle, informasi mengenai power Husqvarna TE 250 memang nggak tersedia. " +
                 "Tapi… Hal berbeda terdapat di website Husqvarna Motor Indonesia. Dalam spesifikasi Husqvarna TE 250 di website Husqvarna Motor Indonesia " +
                 "justru dideskripsikan dengan jelas kalau motor yang satu ini punya tenaga 52 HP. Sayangnya informasi mengenai torsi nggak tersedia di sana." +
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("Judul", "ODONG-ODONG FIZZ BALAP");
         intent.putExtra("Code", "6");
-        intent.putExtra("harga","Rp.1.000.000");
+        intent.putExtra("harga", "Rp.1.000.000");
         intent.putExtra("Ket", "Harga motor trail ODONG-ODONG FIZZ pada model ini memang dibanderol dengan harga yang cukup murah");
         intent.putExtra("Review", "ODONG-ODONG FIZZ BALAP\n" +
                 "•\tShockbreaker depan\n" +
@@ -151,9 +151,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("Judul", "KLX 150 BF");
         intent.putExtra("Code", "7");
-        intent.putExtra("harga","Rp.34.000.000");
+        intent.putExtra("harga", "Rp.34.000.000");
         intent.putExtra("Ket", "Harga motor trail KLX pada model ini memang dibanderol dengan harga yang cukup mahal");
-        intent.putExtra("Review", "KLX 150 BF\n"+
+        intent.putExtra("Review", "KLX 150 BF\n" +
                 "Dilengkapi Panel Indikator Minimalis dengan Kombinasi Instrumen Analog dan Digital\n" +
                 "Menginjak pada pembahasan lain, kali ini kita akan mengulas sektor instrument indikator dari spesifikasi Kawasaki KLX 150 BF." +
                 " Panel indikator yang akan diusung motor off road ini sebenarnya tak jauh berbeda dengan instrument pada versi KLX sebelumnya." +

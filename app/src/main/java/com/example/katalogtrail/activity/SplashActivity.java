@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.katalogtrail.R;
-import com.example.katalogtrail.R;
+
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -19,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                startActivity(new Intent(SplashActivity.this,MainActivity.class));
 
                 finish();
             }

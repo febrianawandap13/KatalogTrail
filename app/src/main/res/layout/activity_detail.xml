@@ -1,61 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".activity.DetailActivity">
 
-    <RelativeLayout
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
 
-        <ImageView
-            android:layout_width="300dp"
-            android:id="@+id/detailgambar"
-            android:layout_height="220dp"
-            android:layout_centerHorizontal="true"/>
-    </RelativeLayout>
-
-    <ScrollView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/judul"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:layout_margin="10dp"
-                android:textStyle="bold"
-                android:gravity="center"
-                />
-            <TextView
-                android:id="@+id/harga"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:layout_margin="10dp"
-                android:textStyle="bold"
-                android:gravity="center"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/deskripsi"
-                android:layout_margin="10dp"
-                />
-
-        </LinearLayout>
-
-
-    </ScrollView>
-
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/navigation"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

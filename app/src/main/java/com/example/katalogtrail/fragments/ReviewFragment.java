@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.katalogtrail.R;
-import com.example.katalogtrail.R;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,7 +18,6 @@ import com.example.katalogtrail.R;
 public class ReviewFragment extends Fragment {
 
     TextView review;
-
     public ReviewFragment() {
         // Required empty public constructor
     }
@@ -29,9 +27,10 @@ public class ReviewFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_review, container, false);
+        View view= inflater.inflate(R.layout.fragment_review, container, false);
         review = view.findViewById(R.id.review);
         review.setText(getArguments().getString("Review"));
         return view;
     }
+
 }

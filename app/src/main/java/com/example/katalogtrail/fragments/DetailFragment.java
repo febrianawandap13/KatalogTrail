@@ -12,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.katalogtrail.R;
-import com.example.katalogtrail.R;
 
 /**
  * A simple {@link Fragment} subclass.
